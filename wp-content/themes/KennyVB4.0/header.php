@@ -45,12 +45,6 @@
 
 <body <?php body_class(); ?>>
 <a href="/"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="Kennyvb" id="logo"></a>
-
-
-
-
-
-	
 <div id="page-wrap">
 <?php jquery_drop_down_menu() ?>
 		<div id="twitter">
