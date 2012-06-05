@@ -66,9 +66,5 @@
       generateRandomImgTag();
    }
 ?>	
-
 			</div>
-
-
-
 	<div id="main-content">
