@@ -49,4 +49,4 @@ p					{ color: white; font: 15px Georgia, serif; margin: 20px 0 20px 0;}
 #dropmenu, #dropmenu ul {margin:28px 0 0 589px; padding:0; list-style-type:none; list-style-position:outside; position:absolute; line-height:1.7em; z-index:300; width:100%; }
 
 
-p, pre { margin: 1em 0; }
+pre { margin: 1em 0; }
