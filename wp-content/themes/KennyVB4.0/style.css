@@ -23,7 +23,7 @@ a:hover				{ color: #6dcff6; }
 #navi			{ width: 1260px;}
 #second-nav		{padding-right: 100px; padding-left: 100px;}
 
-#random-photo	{float: left; width: 440px; background: rgba(0,114,188,0.18); margin: 649px 0px 11px -480px; padding: 20px; -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
+#random-photo	{float: left; width: 440px; background: rgba(0,114,188,0.18); margin: 649px 0px 11px -480px; padding: 10px; -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
 
 #twitter		{float: left; width: 440px; height: 400px; background: rgba(0,114,188,0.18); margin: 196px 0px 0px 0px; padding: 20px;  -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
 
@@ -33,7 +33,7 @@ a:hover				{ color: #6dcff6; }
 /*
 	TYPOGRAPHY
 */
-h2					{ text-transform: uppercase; font: 17px Georgia, serif; letter-spacing: 2px; margin: 10px 0 10px 0; text-align: center; color: white; text-decoration: underline;}
+h2					{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-transform: uppercase; font: 17px Georgia, serif; letter-spacing: 2px; margin: 10px 0 10px 0; text-align: center; color: white;}
 h2 a				{ color: white;}
 h2 a:hover			{ color: #6dcff6; }
 .entry-date			{ color: white; }

@@ -48,17 +48,24 @@
 
 
 
-<?php jquery_drop_down_menu() ?>
+
 
 	
 <div id="page-wrap">
+<?php jquery_drop_down_menu() ?>
 		<div id="twitter">
 			<h4>Twitter</h4>
 			<h5>Sidste tweets</h5>
 			<div class="tweet"></div>
 			</div>
 			<div id="random-photo">
-			<img class="shuffle" src="" alt="">	
+			<?php
+   if (function_exists('generateRandomImgTag'))
+   {
+      generateRandomImgTag();
+   }
+?>	
+
 			</div>
 
 
