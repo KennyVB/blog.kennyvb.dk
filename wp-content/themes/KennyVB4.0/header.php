@@ -67,4 +67,5 @@
    }
 ?>	
 			</div>
+			
 	<div id="main-content">
