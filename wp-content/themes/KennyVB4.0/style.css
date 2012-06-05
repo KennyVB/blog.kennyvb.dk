@@ -1,0 +1,52 @@
+/*
+Theme Name: Starkers
+Theme URI: http://elliotjaystocks.com
+Description: The totally nude Wordpress theme. Phwoar! (Based on Twenty Ten)
+Version: 3.0
+Author: Elliot Jay Stocks
+Author URI: http://elliotjaystocks.com
+Tags: starkers, naked, clean, basic
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+*				{ margin: 0; padding: 0; }
+body			{ color: white;font: 14px Georgia, serif; background:black url(images/bg1.jpg) fixed no-repeat;}
+a					{ text-decoration: none; color: white; }
+a img				{ border: 0; }
+a:hover				{ color: #6dcff6; }
+
+#page-wrap		{ width: 1260px;  overflow:auto; }
+#main-content 	{ margin: 196px 0px 0px 490px; background: rgba(0,114,188,0.18); padding: 20px; width: 720px; -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
+#navi			{ width: 1260px;}
+#second-nav		{padding-right: 100px; padding-left: 100px;}
+
+#random-photo	{float: left; width: 440px; background: rgba(0,114,188,0.18); margin: 649px 0px 11px -480px; padding: 20px; -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
+
+#twitter		{float: left; width: 440px; height: 400px; background: rgba(0,114,188,0.18); margin: 196px 0px 0px 0px; padding: 20px;  -moz-border-radius-topright: 20px; -moz-border-radius-topleft: 20px; -moz-border-radius-bottomright: 20px;  -moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;}
+
+#footer			{clear: both; width: auto; background: rgba(0,114,188,0.18); padding: 100px 100px 100px 100px;}
+
+
+/*
+	TYPOGRAPHY
+*/
+h2					{ text-transform: uppercase; font: 17px Georgia, serif; letter-spacing: 2px; margin: 10px 0 10px 0; text-align: center; color: white; text-decoration: underline;}
+h2 a				{ color: white;}
+h2 a:hover			{ color: #6dcff6; }
+.entry-date			{ color: white; }
+.entry-date a:hover { color: #6dcff6}
+p					{ color: white; font: 15px Georgia, serif; margin: 20px 0 20px 0;}
+
+#logo				{ position: absolute; top: 10px; left: 0px; z-index: 50 ;}
+
+#twitter h4			{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-transform: uppercase; font: 16px Georgia, serif; letter-spacing: 2px; margin: 0 0 10px 0; position: relative; }
+#twitter h5			{ font: italic 16px Georgia, serif; color: #6dcff6; margin: 0 0 10px 0; }
+
+
+#dropmenu, #dropmenu ul {margin:28px 0 0 589px; padding:0; list-style-type:none; list-style-position:outside; position:absolute; line-height:1.7em; z-index:300; width:100%; }
+
+
+p, pre { margin: 1em 0; }

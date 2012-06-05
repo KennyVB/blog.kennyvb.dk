@@ -1,0 +1,59 @@
+/*
+Theme Name: KennyVB
+Theme URI: http://kennyvb.dk
+Description: Wickedly new theme from Kennyvb
+Version: 1.0
+Author: Kenny Bülow Larsen
+Author URI: http://kennyvb.dk
+Tags: kennyvb, bigface, clean, basic
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+body 				{ color: white; font:14px Georgia, serif; background: #575757 url(images/bg1.jpg) fixed no-repeat;}
+a					{ text-decoration: none; color: white; }
+a img				{ border: 0; }
+a:hover				{ color: #f47b20; }
+
+
+#page-wrap 			{ width: 902px; margin: 160px 0 0 337px; }
+#main-content		{ position: relative; z-index: 100; overflow: hidden; float: right; background: rgba(244,123,32,0.18); padding: 20px; width: 620px; -moz-border-radius: 20px; -webkite-border-radius: 20px; border-radius:20px; }
+#logo				{ position: absolute; top: 50px; left: 603px; z-index: 50 ;}
+
+#main-nav			{ list-style: none; margin: 20px 0 50px 100px; }
+#main-nav li		{ font: 20px Georgia, serif; }
+#main-nav li a		{ color: #ffffff; display: block; padding: 3px 0; }
+#main-nav li a:hover{ color: #f47b20}
+#main-nav li.current_page_item a	{ background: rgba(244,123,32,0.18); margin: 0 0 0 -16px; text-indent: 16px; color: #f47b20; -moz-border-radius-topleft: 15px; -moz-border-radius-bottomleft: 15px; -webkit-border-top-left-radius: 15px; -webkit-border-bottom-left-radius: 15px; }
+#main-content img	{ margin: 0 0 15px 0; }
+#main-content h2 img{ margin: 0; }
+
+
+/*
+	TYPOGRAPHY
+*/
+h2					{ text-transform: uppercase; font: 17px Georgia, serif; letter-spacing: 2px; margin: 10px 0 10px 0; text-align: center; color: white; text-decoration: underline;}
+h2 a				{ color: white;}
+h2 a:hover			{ color: #f47b20; }
+.entry-date			{ color: white; }
+.entry-date a:hover { color: #f47b20}
+p					{ color: white; font: 15px Georgia, serif; margin: 20px 0 20px 0;}
+/*
+	SIDEBAR
+*/
+#sidebar			{ float: left; width: 242px; }
+#sidebar h4			{ text-transform: uppercase; font: 16px Georgia, serif; letter-spacing: 2px; margin: 0 0 10px 0; position: relative; z-index: 100; overflow: hidden; float: right; }
+#sidebar h5			{ font: italic 16px Georgia, serif; color: #f47b20; margin: 0 0 10px 0; }
+
+/*
+	Twitter
+*/
+#twitter			{ margin: 0 0 0 394px; float: left; width: 127px; z-index: 100; overflow: hidden; float: right; background: rgba(244,123,32,0.18); padding: 20px; -moz-border-radius: 20px; -webkite-border-radius: 20px; border-radius:20px; }
+#twitter h4			{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-transform: uppercase; font: 16px Georgia, serif; letter-spacing: 2px; margin: 0 0 10px 0; position: relative; }
+/*
+	Facebook
+*/
+#facebook			{ margin: 0 0 0 394px; float: left; width: 127px; z-index: 100; overflow: hidden; float: right; background: rgba(244,123,32,0.18); padding: 20px; -moz-border-radius: 20px; -webkite-border-radius: 20px; border-radius:20px; }
+#facebook h4		{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-transform: uppercase; font: 16px Georgia, serif; letter-spacing: 2px; margin: 0 0 10px 0; position: relative; }
