@@ -1,0 +1,27 @@
+/* Basic code - don't modify */
+
+.menu-container ul { display: block; margin: 0; padding: 0; position: relative; }
+.menu-container ul li { display: block; list-style: none; margin: 0; padding: 0; float: left; position: relative; }
+.menu-container ul a { display: block; text-decoration:none; }
+.menu-container ul ul { display: none; position: absolute; left: 0; margin: 0; padding: 0; }
+* html .menu-container ul ul { line-height: 0; } /* IE6 "fix" */
+.menu-container ul ul a { zoom: 1; } /* IE6/7 fix */
+.menu-container ul ul li { float: none; }
+.menu-container ul ul ul { top: 0; }
+    
+/* Essentials - configure this */
+
+.menu-container ul ul { width: 130px; }
+.menu-container ul ul ul { left: 130px; }
+
+/* Everything else is theming */
+ 
+.menu-container ul { height: 24px; }
+.menu-container ul *:hover { background-color: none; }
+.menu-container ul a { border:solid 1px #C0C0C0; margin-right:3px; color: #C0C0C0; font-size: 12px; padding: 6px 8px; line-height:1; }
+.menu-container ul li.hover a { color:#000; background:#C0C0C0; opacity:0.85; filter: alpha(opacity=85); }
+.menu-container ul li a:hover { background:#F8F8FF; opacity:0.85; filter: alpha(opacity=85); }
+.menu-container ul ul { top: 26px; }
+.menu-container ul ul li a { background:#C0C0C0; color:#000; margin:0; }
+.menu-container ul ul a.hover {  }
+.menu-container ul ul a { border-right: none; border-bottom:none; opacity:0.85; filter: alpha(opacity=85); }

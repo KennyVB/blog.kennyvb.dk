@@ -1,0 +1,599 @@
+@charset "utf-8";
+/*
+Theme Name: Moonbeams
+Theme URI: http://www.jusanya.com/moonbeams
+Description: Moonbeams theme for WordPress is stylish, simple and customizable. You can change background image/color and header image from WordPress admin panel. SEO optimized, multiple widget-ready placement, custom menu, threaded-comments and valid XHTML 1.0 Transitional. For WordPress version 3.0+
+Version: 1.25
+Author: Maruyama Kiyotaka
+Author URI: http://www.maruyamakiyotaka.com
+Tags: black, one-column, two-columns, three-columns, right-sidebar, fixed-width, custom-background, custom-header, custom-menu, translation-ready
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+
+Font-size Adjustment
+10px = 77%
+11px = 85%
+12px = 93%
+13px = 100%
+14px = 108%
+15px = 116%
+16px = 123.1%
+17px = 131%
+18px = 138.5%
+19px = 146.5%
+20px = 153.9%
+21px = 161.6%
+22px = 167%
+23px = 174%
+24px = 182%
+25px = 189%
+26px = 197%
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+}
+
+
+/* background */
+html {
+background:#000 url('images/background.jpg') fixed no-repeat center top;
+color:#C0C0C0;
+text-align:center;
+}
+
+
+/* font */
+strong {
+font-weight:bold;
+}
+
+a {
+color:#C0C0C0;
+}
+
+a:hover {
+color:#F8F8FF;
+}
+
+#copyright {
+text-align:right;
+color:#C0C0C0;
+}
+
+#copyright a {
+color:#C0C0C0;
+text-decoration:none;
+}
+
+#copyright a:hover {
+color:#fff;
+}
+
+/* hx */
+h1,h2,h3,h4,h5,h6 {
+margin:10px 0 0.5em 0;
+font-weight:normal;
+}
+
+h1 {
+font-size:138.5%;
+margin-bottom:1em;
+}
+
+h2 {
+font-size:116%;
+}
+
+h3 {
+font-size:108%;
+}
+
+h5 {
+font-weight:normal;
+font-size:93%;
+}
+
+h6 {
+font-weight:normal;
+font-size:85%;
+}
+
+
+/* p */
+p {
+margin-bottom:1em;
+line-height:1.5em;
+}
+
+
+/* ul, ol, dl */
+ul ul,ul ol,ol ul,ol ol {
+margin: 0;
+padding: 0 0 0 1em;
+}
+
+ul {
+padding-left:1.5em;
+list-style-type:disc;
+}
+
+ol {
+padding-left:2.5em;
+list-style-type:decimal;
+}
+
+dt {
+line-height:2em;
+font-weight: bold;
+margin-top: 1em;
+border-bottom: dotted 1px #C0C0C0;
+}
+      
+dd {
+padding-left: 1em;
+margin-top: 0.5em;
+}
+
+
+/* image */
+.content img {
+height: auto;
+max-width:460px;
+}
+
+.content div {
+height: auto;
+max-width:460px;
+}
+
+.content .attachment img {
+max-width:900px;
+}
+
+a img {
+border:none;
+}
+
+
+/* header */
+#header {
+position:relative;
+width:950px;
+height:300px;
+margin:0 auto;
+text-align:left;
+}
+
+
+#info {
+position:relative;
+height:300px;
+padding-left:10px;
+padding-top:20px;
+}
+
+#info .sitename {
+font-size:138.5%;
+}
+
+#info .sitename a {
+text-decoration:none;
+}
+
+#info .sitedesc {
+font-size:93%;
+margin-left:2em;
+}
+
+
+/* wrapper */
+#wrap {
+position:relative;
+width:950px;
+margin:15px auto;
+text-align:left;
+z-index:1;
+}
+
+
+/* columns */
+#main {
+position:relative;
+width:484px;
+float:left;
+}
+
+
+.content {
+position:relative;
+margin-bottom:10px;
+}
+
+.maincolumn,
+.sidecolumn {
+margin:0 auto 30px auto;
+}
+
+.maincolumn {
+width:460px;
+}
+
+.sidecolumn {
+width:200px;
+font-size:93%;
+}
+
+.post {
+padding-bottom:10px;
+margin-bottom:15px;
+border-bottom:solid 1px #222;
+}
+
+
+/* sidebar */
+#left {
+position:relative;
+float:left;
+width:220px;
+margin-left:10px;
+}
+
+
+#right {
+position:relative;
+float:right;
+width:220px;
+}
+
+
+/* footer menu */
+#footer_left {
+position:relative;
+width:238px;
+float:left;
+}
+
+
+#footer_right {
+position:relative;
+width:238px;
+float:right;
+}
+
+
+/* footer */
+#footer {
+position:relative;
+clear:both;
+width:950px;
+height:300px;
+margin:0 auto;
+text-align:left;
+line-height:130%;
+font-size:93%;
+}
+
+#copyright {
+position:relative;
+margin:10px 0 0 0;
+}
+
+
+/* search */
+#search {
+margin:5px;
+}
+
+#search #s {
+background:#fff url('images/search.png') 0 center no-repeat;
+font-size:.9em;
+padding:3px 0 3px 20px;
+width:150px;
+}
+
+#search input {
+border:1px solid #ccc;
+}
+
+.search-excerpt {
+margin:0;
+}
+
+
+/* calender */
+table#wp-calendar {
+width:100%;
+}
+
+table#wp-calendar td,
+table#wp-calendar th {
+padding:1px;
+text-align:center;
+}
+
+
+/* navigation */
+.navigation {
+margin-bottom:2em;
+}
+
+.menu-container {
+position:relative;
+width:950px;
+margin:15px auto;
+text-align:left;
+z-index:9999;
+}
+
+
+/* page navigation */
+.nav-previous {
+float:left;
+}
+
+.nav-next {
+float:right;
+}
+
+
+/* meta */
+.contentmeta {
+margin-bottom:15px;
+}
+
+.contentmeta ul {
+list-style:none;
+margin:0;
+padding:0;
+}
+
+
+/* comments */
+ol.commentlist {
+margin-bottom:15px;
+}
+
+ol.commentlist,
+ol.commentlist ul {
+list-style:none;
+padding:0;
+}
+
+ol.commentlist li {
+border-top:solid 1px #222;
+border-left:solid 1px #222;
+padding:10px 0 0 10px;
+}
+
+ol.commentlist li li {
+}
+
+ol.commentlist li.bypostauthor cite {
+font-weight:bold;
+}
+
+ol.commentlist li.byuser {
+}
+
+.comment,
+.trackback,
+.pingback {
+margin-top:10px;
+}
+
+.avatar {
+float:left;
+margin-right:1em;
+}
+
+.reply {
+text-align:right;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment {
+margin:3px;
+}
+
+
+/* comment form */
+#commentform p.logged-in-as,
+#commentform p.comment-notes,
+#commentform p.form-allowed-tags {
+font-size:85%;
+}
+
+.required {
+color:#cc0000;
+}
+
+#commentform input#author,
+#commentform input#email,
+#commentform input#url {
+float:left;
+width:250px;
+margin-right:1em;
+}
+
+#commentform textarea {
+width:100%;
+height:8em;
+}
+
+#commentform p.comment-form-comment label {
+display:none;
+}
+
+
+/* gallery */
+.gallery dl {
+margin:0;
+overflow:hidden;
+}
+
+.gallery dt {
+font-weight: normal;
+border-bottom: none;
+}
+      
+.gallery dd {
+padding: 0;
+}
+
+.gallery img {
+border:none !important;
+}
+
+
+/* feed */
+.feed {
+margin-left:3px;
+padding:0 0 0 15px;
+background:url('images/feed_mini.png') no-repeat 0 50%;
+}
+
+
+/* wp */
+.aligncenter {
+display:block;
+margin:0 auto;
+}
+
+.alignleft {
+float:left;
+margin-right:15px;
+}
+
+.alignright {
+float:right;
+margin-left:15px;
+}
+
+.alignnone {
+display:block;
+}
+
+.wp-caption,
+.gallery-caption {
+text-align:center;
+}
+
+.wp-caption img {
+border:none;
+margin:0;
+padding:0;
+}
+
+.wp-caption p.wp-caption-text {
+font-size:85%;
+margin:0;
+padding:3px;
+}
+
+.attachment-post-thumbnail {
+float:left;
+margin-right:10px;
+}
+
+.sticky {
+border:solid 1px #C0C0C0;
+padding:0 15px;
+margin-bottom:30px;
+}
+
+
+/* author */
+#entry-author-info {
+margin:20px 0 30px 0;
+}
+
+
+/* blockquote, pre */
+blockquote {
+margin:10px;
+padding:0 10px;
+border-left:solid 3px #C0C0C0;
+}
+
+pre {
+font-family: "Courier New",Courier,monospace;
+border: inset 1px #000;
+line-height: 120%;
+margin: 1em 0 0 0;
+padding: 0.99em;
+}
+
+
+/* table */
+.content table {
+border: 1px #C0C0C0 solid;
+border-collapse:collapse;
+border-spacing:0;
+}
+
+.content table th {
+padding: 5px;
+border: #C0C0C0 solid;
+border-width: 0 0 1px 1px;
+font-weight: normal;
+}
+
+.content table td {
+padding: 5px;
+border: #C0C0C0 solid;
+border-width: 0 0 1px 1px;
+}
+
+caption,th {
+text-align:center;
+}
+
+
+/* clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}

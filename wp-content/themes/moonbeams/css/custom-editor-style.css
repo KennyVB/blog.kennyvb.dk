@@ -1,0 +1,189 @@
+html .mceContentBody {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+}
+
+
+/* font */
+strong {
+font-weight:bold;
+}
+
+
+/* hx */
+h1,h2,h3,h4,h5,h6 {
+margin:10px 0 0.5em 0;
+font-weight:normal;
+}
+
+h1 {
+font-size:138.5%;
+margin-bottom:1em;
+}
+
+h2 {
+font-size:116%;
+}
+
+h3 {
+font-size:108%;
+}
+
+h5 {
+font-weight:normal;
+font-size:93%;
+}
+
+h6 {
+font-weight:normal;
+font-size:85%;
+}
+
+
+/* p */
+p {
+margin-bottom:1em;
+line-height:1.5em;
+}
+
+
+/* ul, ol, dl */
+ul ul,ul ol,ol ul,ol ol {
+margin: 0;
+padding: 0 0 0 1em;
+}
+
+ul {
+padding-left:1.5em;
+list-style-type:disc;
+}
+
+ol {
+padding-left:2.5em;
+list-style-type:decimal;
+}
+
+dt {
+line-height:2em;
+font-weight: bold;
+margin-top: 1em;
+border-bottom: dotted 1px #C0C0C0;
+}
+      
+dd {
+padding-left: 1em;
+margin-top: 0.5em;
+}
+
+
+/* image */
+a img {
+border:none;
+}
+
+/* wp */
+.aligncenter {
+display:block;
+margin:0 auto;
+}
+
+.alignleft {
+float:left;
+margin-right:15px;
+}
+
+.alignright {
+float:right;
+margin-left:15px;
+}
+
+.alignnone {
+display:block;
+}
+
+
+/* blockquote, pre */
+blockquote {
+margin:10px;
+padding:0 10px;
+border-left:solid 3px #C0C0C0;
+}
+
+pre {
+font-family: "Courier New",Courier,monospace;
+border: inset 1px #000;
+line-height: 120%;
+margin: 1em 0 0 0;
+padding: 0.99em;
+}
+
+
+/* table */
+table {
+border: 1px #333 solid;
+border-collapse:collapse;
+border-spacing:0;
+}
+
+table th {
+padding: 5px;
+border: #333 solid;
+border-width: 0 0 1px 1px;
+font-weight: normal;
+}
+
+table td {
+padding: 5px;
+border: #333 solid;
+border-width: 0 0 1px 1px;
+}
+
+caption,th {
+text-align:center;
+}
+
+.mceWPnextpage,
+.mceWPmore {
+clear:both;
+margin:1em 0;
+}
+
+
+/* clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*¥*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
