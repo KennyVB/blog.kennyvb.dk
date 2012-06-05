@@ -50,3 +50,89 @@ p					{ color: white; font: 15px Georgia, serif; margin: 20px 0 20px 0;}
 
 
 pre { margin: 1em 0; }
+
+
+
+/*navigation menu */
+#nav {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-color:rgba(0,114,188,0.18);
+margin:148px 0px 0px 0px;
+padding:0;
+width:100%;
+position:absolute;
+z-index:100;
+}
+#nav, #nav ul {
+line-height:40px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+width:100%;
+}
+#nav a, #nav a:hover {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+border:medium none;
+display:block;
+text-decoration:none;
+color:#6dcff6;
+}
+#nav li {
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+border-right:1px solid #6E7073;
+}
+#nav a, #nav a:visited {
+color:#FFFFFF;
+display:block;
+padding:0 20px;
+}
+#nav a:hover, #nav a:active, .current_page_item a, #home .on {
+text-decoration:none;
+}
+#nav li ul {
+border-bottom:1px solid #6E7073;
+height:auto;
+left:-999em;
+line-height:30px;
+margin:0;
+padding:0;
+position:absolute;
+width:222px;
+}
+#nav li li {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#1E1F21 none repeat scroll 0 0;
+border-left:1px solid #6E7073;
+border-right:1px solid #6E7073;
+border-top:1px solid #6E7073;
+width:220px;
+}
+#nav li li a, #nav li li a:visited {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-color:rgba(0,114,188,0.18); none repeat scroll 0 0;
+color:#ffffff;
+font-size:0.9em;
+font-weight:normal;
+}
+#nav li li a:hover, #nav li li a:active {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#60625C none repeat scroll 0 0;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+left:auto;
+}
+/*navigation menu */

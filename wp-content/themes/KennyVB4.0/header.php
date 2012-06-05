@@ -46,7 +46,14 @@
 <body <?php body_class(); ?>>
 <a href="/"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="Kennyvb" id="logo"></a>
 <div id="page-wrap">
-<?php jquery_drop_down_menu() ?>
+
+<div id="navi">
+	<ul id="nav">
+        <?php wp_list_pages('title_li=&depth=0&sort_column=menu_order&exclude=56'); ?>
+</ul>
+	
+</div>
+
 		<div id="twitter">
 			<h4>Twitter</h4>
 			<h5>Sidste tweets</h5>
