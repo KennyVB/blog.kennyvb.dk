@@ -49,7 +49,7 @@
 
 <div id="navi">
 	<ul id="nav">
-        <?php wp_list_pages('title_li=&depth=0&sort_column=menu_order&exclude=56'); ?>
+        <?php wp_list_pages('title_li=&depth=0&sort_column=menu_order'); ?>
 </ul>
 	
 </div>
