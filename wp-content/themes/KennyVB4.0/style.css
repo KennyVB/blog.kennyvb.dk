@@ -59,9 +59,9 @@ pre { margin: 1em 0; }
 -moz-background-inline-policy:continuous;
 -moz-background-origin:padding;
 background-color:rgba(0,114,188,0.18);
-margin:148px 0px 0px 0px;
+margin:16px 0px 0px 496px;
 padding:0;
-width:100%;
+width:527px;
 position:absolute;
 z-index:100;
 }
@@ -70,7 +70,7 @@ line-height:40px;
 list-style-image:none;
 list-style-position:outside;
 list-style-type:none;
-width:100%;
+width:527px;
 }
 #nav a, #nav a:hover {
 -moz-background-clip:border;
