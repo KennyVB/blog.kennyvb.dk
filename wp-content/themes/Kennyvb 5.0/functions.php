@@ -1,4 +1,50 @@
 <?php
+// tumblr-like post titles in posts @ digwp.com
+function tumblrPostTitles() { 
+	global $post; 
+	$permalink = get_permalink(get_post($post->ID));
+	$tumblr_keys = get_post_custom_keys($post->ID); 
+	if ($tumblr_keys) {
+  		foreach ($tumblr_keys as $tumblr_key) {
+    			if ($tumblr_key == 'TumblrURL') {
+      				$tumblr_vals = get_post_custom_values($tumblr_key);
+    			}
+  		}
+  		if ($tumblr_vals) {
+			echo $tumblr_vals[0];
+  		} else {
+    			echo $permalink;
+  		}
+	} else {
+  		echo $permalink;
+	}
+}
+
+// tumblr-like post titles in feeds @ digwp.com
+add_filter('the_permalink_rss', 'tumblrFeedTitles');
+function tumblrFeedTitles($permalink) {
+	global $wp_query;
+	if ($url = get_post_meta($wp_query->post->ID, 'TumblrURL', true)) {
+		return $url;
+	}
+	return $permalink;
+}
+
+// link-back for Tumblr-like posts @ digwp.com
+add_filter('the_content', 'tumblrLinkBacks');
+function tumblrLinkBacks($content) {
+	global $wp_query;
+	$post_id = get_post($post->ID);
+	$posttitle = $post_id->post_title;
+	$permalink = get_permalink(get_post($post->ID));
+	if (get_post_meta($wp_query->post->ID, 'TumblrURL', true)) {
+		$content .= '<p><a href="'.$permalink.'" title="'.$posttitle.'">&#8734;</a></p>';
+		return $content;
+	} else {
+		$content = $content;
+		return $content;
+	}
+}
 function add_our_scripts() {
  
     if (!is_admin()) { // Add the scripts, but not to the wp-admin section.
