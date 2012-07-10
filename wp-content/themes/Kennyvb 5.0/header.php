@@ -49,7 +49,21 @@
 <div id="navi">
     <ul id="nav">
         <?php wp_list_pages('title_li=&depth=0&sort_column=menu_order'); ?>
+        
 </ul>
+<div class="search-form">
+        <?php $search_text = "S&oslash;g"; ?> 
+<form method="get" id="searchform"  
+action="<?php bloginfo('home'); ?>/"> 
+<input type="text" value="<?php echo $search_text; ?>"  
+name="s" id="s"  
+onblur="if (this.value == '')  
+{this.value = '<?php echo $search_text; ?>';}"  
+onfocus="if (this.value == '<?php echo $search_text; ?>')  
+{this.value = '';}" /> 
+<input type="hidden" id="searchsubmit" /> 
+</form>
+        </div>
 </div>
 
 <div id="twitter">

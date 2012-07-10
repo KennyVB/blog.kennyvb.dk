@@ -45,3 +45,4 @@ p					{ color: white; font-size: 13px;font: 400;font-family: 'Open Sans', sans-s
 .sharing div.facebook_button { font-size: 0; height: 18px; padding: 0; }
 #sidste_post 		{ float: right; width: 448px; height: 213px; margin: 195px 0 0 689px; position: absolute; }
 #sidste_post h4		{ font: italic 16px ; color: #6dcff6; margin: 0 0 10px 0; }
+#search-form        { margin: 0px 0px 0px 0px;}
