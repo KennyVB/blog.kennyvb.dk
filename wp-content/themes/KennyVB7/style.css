@@ -15,6 +15,7 @@ Tags: starkers, naked, clean, basic
 
 *					{ margin:0; padding:0; font-family: 'Open Sans', sans-serif;}
 a					{ text-decoration: underline; color: white;}
+a:hover             { color: #196a89;}
 a img				{ border: 0; }
 body 				{ background: #ffffff url(./images/pattern_40.gif);}
 html, body 			{ height: 100%; margin: auto; }
@@ -41,7 +42,7 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 #twitter h5			{ color: #0090bc; margin: 0 0 0px 0; }
 #logo-name			{ position: absolute; z-index: 51 ;}
 #stringbig			{ position: absolute; z-index: 50 ; margin: 130px 0px 0px 0px ;}
-#footer-img			{ position: absolute; z-index: 50 ;}
+#footer-links       { margin: 0px 0px 0px 346px; position: absolute; font-size: 14px; z-index: 62}
 #footer				{ background: #000000;width: 1158px; position: relative; /* .push must be the same height as .footer */; margin: -92px auto ; /* negative value of footer height */ height: 150px; clear:both;}
 .footer, .push      { clear: both; height: 150px; /* .push must be the same height as .footer */ }
 #footer_line1		{ margin: 15px 0 0 332px; height: 121px; width: 2px; background: #79c143; position: absolute; z-index: 59;}
@@ -55,13 +56,14 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 #box3               { margin: 219px 0 0 -3px; height: 56px; width: 88px;  background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 
 .content_right, .content_left   { float: left;width: 45%;}
-.content_left       {padding-right: 5%;}
+.content_left       { padding-right: 5%;}
 .content            { -moz-column-count: 3; -moz-column-gap: 10px; -moz-column-rule: none; -webkit-column-count: 3; -webkit-column-gap: 10px; -webkit-column-rule: none; column-count: 3; column-gap: 10px; column-rule: none; }
 .seneste_post       { margin: 15px 0px 0px 245px; z-index: 56; position: relative;}
 .postdate           { margin: 15px 0px 0px 0px; z-index: 56; position: relative; color: white}
 #seneste_nyt        { margin: -100px 0px 0px 0px; position: relative; text-align: right;}
 #forside_stuff      { margin: 100px 0px 0px 0px; position: relative; }
 #sidste_post 		{ float: right; width: 490px; height: auto; margin: 15px 0px 0px 0px; position: relative; }
+#sidste_post p      { font-size: small; font-style: italic;}
 #sidste_post h4		{ font: italic 16px ; color: #196a89; margin: 0 0 10px 0; }
 #sidste_post h3     { color:green ;border-top: 1px solid #79c143; border-bottom: 1px solid #79c143; text-transform: uppercase; text-align: center;}
 h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:focus,h2 a:hover,h2 a:active,h3 a,h3 a:link,h3 a:visited,h3 a:focus,h3 a:hover,h3 a:active,h4 a,h4 a:link,h4 a:visited,h4 a:focus,h4 a:hover,h4 a:active	{ text-decoration: none}
@@ -70,7 +72,7 @@ h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:
 #post_links         { margin: 0px 0 0 0px; position: absolute; z-index: 61;}
 #the_content        { margin: 100px 0px 0px 560px; position: relative; width: 591px}
 #the_content p      { font-size: small; font-style: italic;}
-#title_h1           { margin: 118px 0 0 0px; position: absolute; text-align: center; width: 398px; text-transform: uppercase; z-index: 100;}
+#title_h1           { margin: 112px 0 0 0px; position: absolute; text-align: center; width: 398px; text-transform: uppercase; z-index: 100;}
 #title_h1 h1        { font-size: 16px; color: white;}
 
 .alignleft          { color: white}
@@ -84,13 +86,13 @@ h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:
 #respond            { margin: 0px auto; position: relative; width: 600px;}
 #comments           { margin: 0px auto ; position: relative ; width: 600px}
 #comments-title     { margin: 0px auto ; position: relative ; width: 600px}
-.content_m_innerpage h2 a, .postmetadata a,.postmetadata,.commentmetadata,.commentmetadata a,#respond a, .desc-form ul a, .post a, .comment-body a{color:#FFF;text-decoration:none;}
-.content_m_innerpage h2 a:hover,.postmetadata a:hover, .post a:hover{text-decoration:underline;}
-.commentlist{ list-style:none;}
-.comment-body{padding:6px;background-color:#434343;margin-bottom:8px;}
-.commentmetadata{font-size:12px;}
-.commentmetadata a:hover, #respond a:hover,.desc-form ul a:hover,.comment-body a:hover {color:#FFFFCC !important;}
-.comment-body p {color: white; font-size: 16px;}
+.content_m_innerpage h2 a, .postmetadata a,.postmetadata,.commentmetadata,.commentmetadata a,#respond a, .desc-form ul a, .post a, .comment-body a  { color:#FFF;text-decoration:none;}
+.content_m_innerpage h2 a:hover,.postmetadata a:hover, .post a:hover { text-decoration:underline;}
+.commentlist        { list-style:none;}
+.comment-body       { padding:6px;background-color:#434343;margin-bottom:8px;}
+.commentmetadata    { font-size:12px;}
+.commentmetadata a:hover, #respond a:hover,.desc-form ul a:hover,.comment-body a:hover {color:#196a89 !important;}
+.comment-body p     { color: white; font-size: 16px;}
 .children           { margin: 0px 0px 0px 0px; position: relative}
 .reply              { margin: 0px 0px 0px 0px; position: relative}
 .reply a            { margin: 0px 0px 0px 0px; position: relative}

@@ -41,6 +41,18 @@
     		<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress </a></div>
     		</div>
 <div id="footer_line1"></div>
+<div id="footer-links">
+<p>Links</p>
+<ul>
+<li><a href="http://blog.artofanangel.dk" target="_blank">Blog.ArtOfAnAngel.dk</a></li>
+<li><a href="http://www.totallywicked-eliquid.dk/" target="_blank">Totally Wicked</a></li>
+<li><a href="http://www.komogvind.dk/" target="_blank">Kom og Vind</a></li>
+<li><a href="http://css-tricks.com" target="_blank">Css-tricks.com</a></li>
+</ul>
+</div>
+
+
+
     <div id="footer_line2"></div>
        <div id="twitter">
            <div class="tweet"></div>

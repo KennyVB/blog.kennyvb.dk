@@ -20,35 +20,15 @@ get_header(); ?>
 <?php the_excerpt(); ?>
 <?php endwhile; ?>
 </div>
-	 <div id="box1">
-	
-</div>
+	 <div id="box1"></div>
 	 <div id="box2"></div>
 	 <div id="box3"></div>
 <div id="archives">
 <div class="content">
-	<p><?php wp_get_archives('type=postbypost'); ?></p>
+	<h4>Alle Indl&aelig;g :</h4><br><?php wp_get_archives('type=postbypost'); ?>
 </div>
 <br>
-<div id="catagories">
-<?php // display categories in two columns
-$cats = explode('<br />', wp_list_categories('title_li=&echo=0&depth=1&style=none'));
-$cat_n = count($cats) - 1;
-for ($i = 0; $i < $cat_n; $i++):
-	if ($i < $cat_n/2):
-		$cat_left = $cat_left.'<li>'.$cats[$i].'</li>';
-	elseif ($i >= $cat_n/2):
-		$cat_right = $cat_right.'<li>'.$cats[$i].'</li>';
-	endif;
-endfor; ?>
-
-<ul class="left">
-	<?php echo $cat_left; ?>
-</ul>
-<ul class="right">
-	<?php echo $cat_right; ?>
-</ul>
-</div></div>
+</div>
 
 
 <?php get_sidebar(); ?>
