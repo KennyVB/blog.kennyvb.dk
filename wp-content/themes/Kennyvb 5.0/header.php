@@ -44,7 +44,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="main-wrap">
+<header>
+
 <a href="/"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="Kennyvb" id="logo"></a>
 <div id="navi">
     <ul id="nav">
@@ -65,7 +66,8 @@ onfocus="if (this.value == '<?php echo $search_text; ?>')
 </form>
         </div>
 </div>
-
+</header>
+<div id="main-wrap">
 <div id="twitter">
             <h4>Twitter</h4>
             <h5>Sidste 10 tweets</h5>
@@ -74,9 +76,9 @@ onfocus="if (this.value == '<?php echo $search_text; ?>')
 <div id="sidste_post">
     <h4>Sidste 3 indl&aelig;g</h4>
     <?php $recent = new WP_Query("showposts=3"); while($recent->have_posts()) : $recent->the_post();?>
-<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+<h3><a href="<?php tumblrPostTitles(); ?>"><?php the_title(); ?></a></h3>
 <?php the_excerpt(); ?>
 <?php endwhile; ?>
 </div>
-            
+
 <div id="main-content">

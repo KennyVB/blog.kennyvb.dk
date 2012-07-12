@@ -1,0 +1,102 @@
+/*
+Theme Name: Starkers
+Theme URI: http://elliotjaystocks.com
+Description: The totally nude Wordpress theme. Phwoar! (Based on Twenty Ten)
+Version: 3.0
+Author: Elliot Jay Stocks
+Author URI: http://elliotjaystocks.com
+Tags: starkers, naked, clean, basic
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+*					{ margin:0; padding:0; }
+a					{ text-decoration: underline; color: white;}
+a img				{ border: 0; }
+body 				{ background: #ffffff url(./images/pattern_40.gif);}
+html, body 			{ height: 100%; margin: auto; }
+#header             { margin: 0px 0px 0px 0px; color: #000000; background: #000000; position: relative; height: 131px;}
+#access				{ margin: 0px 0px 0px 0px; }
+#push				{ clear: both; height: 150px; /* .push must be the same height as .footer */ }
+#main-wrap			{ background: #d0d0d0; position: relative; width: 1158px; overflow:auto; padding-bottom: 150px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */}
+#main-content		{ position: relative; z-index: 49; overflow: hidden; margin: 5px 0px 0px 0px; padding: 3px; width: 1152px; min-height: 100%;}
+#nav				{ z-index: 53 ; background-color:#000000; font: 13px Arial, sans-serif ;text-transform: uppercase ;margin: 60px 0px 0px 513px; width: 636px; position: absolute;}
+#nav ul 			{ z-index: 52 ; background-color:#000000; margin:0px 0px; padding:0px 0px; height:40px;}
+#nav li 			{ list-style:none; margin:0px 0px; padding:0px 0px; float:left; display:inline; position:relative;}
+#nav li a 			{ display:block; text-decoration:none; color:#196a89; line-height:40px; padding:0px 15px;}
+#nav li a:hover,nav li:hover > a { color:white;}
+#nav li ul 			{ position:absolute; top:100%; left:0px; z-index:99; width:200px; height:auto; display:none;}
+#nav li ul li 		{ float:none; display:block;}
+#nav li ul ul 		{ top:0px; left:100%;}
+#nav li:hover > ul 	{ display:block;}​
+tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px Arial, sans-serif; height: 92px; width: 496px;}
+.tweet				{ margin: 11px 0px 0px 14px; z-index: 55; position: absolute; font: 12px Arial, sans-serif; height: 92px; width: 480px;}
+.tweet_text 		{ font: 12px Arial, sans-serif; color: white;}
+.tweet_time			{ font: 12px Arial, sans-serif; color: white;}
+.tweet_join 		{ font: 12px Arial, sans-serif; color: white;}
+#twitter			{ float: right; width: 496px; height: 150px; margin: 0px 0 0 656px; position: absolute; z-index: 58;}
+#twitter h5			{ color: #0090bc; margin: 0 0 0px 0; }
+#logo-name			{ position: absolute; z-index: 51 ;}
+#stringbig			{ position: absolute; z-index: 50 ; margin: 130px 0px 0px 0px ;}
+#footer-img			{ position: absolute; z-index: 50 ;}
+#footer				{ background: #000000;width: 1158px; position: relative; /* .push must be the same height as .footer */; margin: -92px auto ; /* negative value of footer height */ height: 150px; clear:both;}
+.footer, .push      { clear: both; height: 150px; /* .push must be the same height as .footer */ }
+#footer_line1		{ margin: 15px 0 0 332px; height: 121px; width: 2px; background: #79c143; position: absolute; z-index: 59;}
+#footer_line2		{ margin: 15px 0 0 656px; height: 121px; width: 2px; background: #79c143; position: absolute; z-index: 60;}
+.search-form		{ margin: 90px 0px 0px 0px; z-index: 54; position: absolute;}
+#meta				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute;}
+#footer-info		{ margin: 0px 0px 0px 0px; z-index: 56; position: absolute;}
+#archives           { margin: 514px 0 0 5px; z-index: 61; position: relative; width: 489px; height: auto;}
+#box1               { margin: 100px 0 0 -3px; height: 56px; width: 400px; background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+#box2               { margin: 160px 0 0 -3px; height: 56px; width: 200px; background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+#box3               { margin: 219px 0 0 -3px; height: 56px; width: 88px;  background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+
+.content_right, .content_left   { float: left;width: 45%;}
+.content_left       {padding-right: 5%;}
+.content            { -moz-column-count: 3; -moz-column-gap: 10px; -moz-column-rule: none; -webkit-column-count: 3; -webkit-column-gap: 10px; -webkit-column-rule: none; column-count: 3; column-gap: 10px; column-rule: none; }
+.seneste_post       { margin: 15px 0px 0px 245px; z-index: 56; position: relative;}
+.postdate           { margin: 15px 0px 0px 0px; z-index: 56; position: relative; color: white}
+#sidste_post 		{ float: right; width: 490px; height: auto; margin: 15px 0px 0px 0px; position: relative; }
+#sidste_post h4		{ font: italic 16px ; color: #196a89; margin: 0 0 10px 0; }
+#sidste_post h3     { color:green ;border-top: 1px solid #79c143; border-bottom: 1px solid #79c143; text-transform: uppercase; text-align: center;}
+h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:focus,h2 a:hover,h2 a:active,h3 a,h3 a:link,h3 a:visited,h3 a:focus,h3 a:hover,h3 a:active,h4 a,h4 a:link,h4 a:visited,h4 a:focus,h4 a:hover,h4 a:active	{ text-decoration: none}
+
+.post-edit-link     { color: green;}
+#post_links         { margin: 0px 0 0 0px; position: absolute; z-index: 61;}
+#the_content        { margin: 100px 0px 0px 560px; position: relative; width: 591px}
+#title_h1           { margin: 0px 0 0 0px; position: absolute; text-align: center; width: 1152px; text-transform: uppercase}
+h1                  { font-size: 42px; border-bottom: 2px solid #79c143;}
+.alignleft          { color: white}
+.alignright         { color: white}
+#posted_on          { margin: 50px 0px 0px 0px; position: absolute;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
