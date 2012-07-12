@@ -69,6 +69,7 @@ h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:
 .post-edit-link     { color: green;}
 #post_links         { margin: 0px 0 0 0px; position: absolute; z-index: 61;}
 #the_content        { margin: 100px 0px 0px 560px; position: relative; width: 591px}
+#the_content p      { font-size: small; font-style: italic;}
 #title_h1           { margin: 118px 0 0 0px; position: absolute; text-align: center; width: 398px; text-transform: uppercase; z-index: 100;}
 #title_h1 h1        { font-size: 16px; color: white;}
 
