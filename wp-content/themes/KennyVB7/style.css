@@ -13,7 +13,7 @@ Tags: starkers, naked, clean, basic
 @import "css/layout.css";
 
 
-*					{ margin:0; padding:0; }
+*					{ margin:0; padding:0; font-family: 'Open Sans', sans-serif;}
 a					{ text-decoration: underline; color: white;}
 a img				{ border: 0; }
 body 				{ background: #ffffff url(./images/pattern_40.gif);}
@@ -59,8 +59,8 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 .content            { -moz-column-count: 3; -moz-column-gap: 10px; -moz-column-rule: none; -webkit-column-count: 3; -webkit-column-gap: 10px; -webkit-column-rule: none; column-count: 3; column-gap: 10px; column-rule: none; }
 .seneste_post       { margin: 15px 0px 0px 245px; z-index: 56; position: relative;}
 .postdate           { margin: 15px 0px 0px 0px; z-index: 56; position: relative; color: white}
-#seneste_nyt        { margin: 0px 0px 0px 0px; position: relative; }
-#forside_stuff      { margin: 0px 0px 0px 0px; position: relative; }
+#seneste_nyt        { margin: -100px 0px 0px 0px; position: relative; text-align: right;}
+#forside_stuff      { margin: 100px 0px 0px 0px; position: relative; }
 #sidste_post 		{ float: right; width: 490px; height: auto; margin: 15px 0px 0px 0px; position: relative; }
 #sidste_post h4		{ font: italic 16px ; color: #196a89; margin: 0 0 10px 0; }
 #sidste_post h3     { color:green ;border-top: 1px solid #79c143; border-bottom: 1px solid #79c143; text-transform: uppercase; text-align: center;}

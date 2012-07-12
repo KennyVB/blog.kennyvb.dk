@@ -18,7 +18,7 @@ get_header(); ?>
     $args=array(
       'post_type' => 'post',
       'post_status' => 'publish',
-      'posts_per_page' => 1,
+      'posts_per_page' => 3,
       'caller_get_posts'=> 1
       );
     $my_query = null;
@@ -26,9 +26,10 @@ get_header(); ?>
     if( $my_query->have_posts() ) {
       echo '';
       while ($my_query->have_posts()) : $my_query->the_post(); ?>
-      <li><h3><a class="seneste_post" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3><h5 class="postdate"><?php the_time('d.m.y') ?></h5></li>
+      <li><h5 class="postdate"><?php the_time('d.m.y') ?></h5><h3><a class="seneste_post" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
       <?php endwhile;
     }
 wp_reset_query(); ?>
 </div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
