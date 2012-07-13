@@ -8,7 +8,7 @@ get_header(); ?>
 
 											<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
+						
 
 
 <?php endwhile; ?>
@@ -22,10 +22,11 @@ get_header(); ?>
 </div>
 	 <div id="box1"></div>
 	 <div id="box2"></div>
-	 <div id="box3"></div>
+	 <div id="box3"><?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?></div>
 <div id="archives">
+<h4>Alle Indl&aelig;g :</h4><br>
 <div class="content">
-	<h4>Alle Indl&aelig;g :</h4><br><?php wp_get_archives('type=postbypost'); ?>
+	<?php wp_get_archives('type=postbypost'); ?>
 </div>
 <br>
 </div>

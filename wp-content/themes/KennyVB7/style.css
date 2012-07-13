@@ -22,8 +22,8 @@ html, body 			{ height: 100%; margin: auto; }
 #header             { margin: 0px 0px 0px 0px; color: #000000; background: #000000; position: relative; height: 131px;}
 #access				{ margin: 0px 0px 0px 0px; }
 #push				{ clear: both; height: 150px; /* .push must be the same height as .footer */ }
-#main-wrap			{ background: #d0d0d0; position: relative; width: 1158px; overflow:auto; padding-bottom: 150px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */}
-#main-content		{ position: relative; z-index: 49; overflow: hidden; margin: 5px 0px 0px 0px; padding: 3px; width: 1152px; min-height: 100%;}
+#main-wrap			{ background: #d0d0d0; position: relative; width: 1152px; overflow:auto; padding-bottom: 150px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */}
+#main-content		{ position: relative; z-index: 49; overflow: hidden; margin: 5px 0px 0px 0px; padding: 3px; width: 1146px; min-height: 100%;}
 #nav				{ z-index: 53 ; background-color:#000000; font: 13px Arial, sans-serif ;text-transform: uppercase ;margin: 60px 0px 0px 513px; width: 636px; position: absolute;}
 #nav ul 			{ z-index: 52 ; background-color:#000000; margin:0px 0px; padding:0px 0px; height:40px;}
 #nav li 			{ list-style:none; margin:0px 0px; padding:0px 0px; float:left; display:inline; position:relative;}
@@ -39,11 +39,13 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 .tweet_time			{ font: 12px Arial, sans-serif; color: white;}
 .tweet_join 		{ font: 12px Arial, sans-serif; color: white;}
 #twitter			{ float: right; width: 496px; height: 150px; margin: 0px 0 0 656px; position: absolute; z-index: 58;}
-#twitter h5			{ color: #0090bc; margin: 0 0 0px 0; }
+#twitter h5			{ color: #0090bc; margin: 0 0 0px 15px; font-size: small;}
 #logo-name			{ position: absolute; z-index: 51 ;}
 #stringbig			{ position: absolute; z-index: 50 ; margin: 130px 0px 0px 0px ;}
 #footer-links       { margin: 0px 0px 0px 346px; position: absolute; font-size: 14px; z-index: 62}
-#footer				{ background: #000000;width: 1158px; position: relative; /* .push must be the same height as .footer */; margin: -92px auto ; /* negative value of footer height */ height: 150px; clear:both;}
+.links_right        { margin: -100px 0 0 161px; position: relative; text-align: right;}
+.links_left         { margin: 0px 0px 0px 0px; position: relative; text-align: left;}
+#footer				{ background: #000000;width: 1152px; position: relative; /* .push must be the same height as .footer */; margin: -92px auto ; /* negative value of footer height */ height: 150px; clear:both;}
 .footer, .push      { clear: both; height: 150px; /* .push must be the same height as .footer */ }
 #footer_line1		{ margin: 15px 0 0 332px; height: 121px; width: 2px; background: #79c143; position: absolute; z-index: 59;}
 #footer_line2		{ margin: 15px 0 0 656px; height: 121px; width: 2px; background: #79c143; position: absolute; z-index: 60;}
@@ -51,6 +53,7 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 #meta				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute;}
 #footer-info		{ margin: 0px 0px 0px 0px; z-index: 56; position: absolute;}
 #archives           { margin: 514px 0 0 5px; z-index: 61; position: relative; width: 489px; height: auto;}
+
 #box1               { margin: 100px 0 0 -3px; height: 56px; width: 400px; background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 #box2               { margin: 160px 0 0 -3px; height: 56px; width: 200px; background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 #box3               { margin: 219px 0 0 -3px; height: 56px; width: 88px;  background: #000000; position: absolute; z-index: 60; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
@@ -63,22 +66,23 @@ tweet				{ margin: 0px 0px 0px 0px; z-index: 55; position: absolute; font: 12px 
 #seneste_nyt        { margin: -100px 0px 0px 0px; position: relative; text-align: right;}
 #forside_stuff      { margin: 100px 0px 0px 0px; position: relative; }
 #sidste_post 		{ float: right; width: 490px; height: auto; margin: 15px 0px 0px 0px; position: relative; }
-#sidste_post p      { font-size: small; font-style: italic;}
-#sidste_post h4		{ font: italic 16px ; color: #196a89; margin: 0 0 10px 0; }
+#sidste_post p      { font-size: small;}
+#sidste_post h4		{ font: 16px ; color: #196a89; margin: 0 0 10px 0; }
 #sidste_post h3     { color:green ;border-top: 1px solid #79c143; border-bottom: 1px solid #79c143; text-transform: uppercase; text-align: center;}
 h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:focus,h2 a:hover,h2 a:active,h3 a,h3 a:link,h3 a:visited,h3 a:focus,h3 a:hover,h3 a:active,h4 a,h4 a:link,h4 a:visited,h4 a:focus,h4 a:hover,h4 a:active	{ text-decoration: none}
 
 .post-edit-link     { color: green;}
 #post_links         { margin: 0px 0 0 0px; position: absolute; z-index: 61;}
 #the_content        { margin: 100px 0px 0px 560px; position: relative; width: 591px}
-#the_content p      { font-size: small; font-style: italic;}
+#the_content p      { font-size: small; }
 #title_h1           { margin: 112px 0 0 0px; position: absolute; text-align: center; width: 398px; text-transform: uppercase; z-index: 100;}
 #title_h1 h1        { font-size: 16px; color: white;}
 
 .alignleft          { color: white}
 .alignright         { color: white}
 #posted_on          { margin: 50px 0px 0px 0px; position: absolute;}
-#credits            { margin: 150px 0px 0px 448px; position: relative;}
+#credits            { margin: 120px auto; position: relative; width: 1158px; text-align: center;}
+#credits a          { font-family: 'Tangerine', cursive; font-size: 33px}
 #meta               { margin: 0px 0px 0px 0px; position: relative;}
 
 
@@ -96,3 +100,7 @@ h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:
 .children           { margin: 0px 0px 0px 0px; position: relative}
 .reply              { margin: 0px 0px 0px 0px; position: relative}
 .reply a            { margin: 0px 0px 0px 0px; position: relative}
+
+
+#page_content       {margin: 0px auto; position: relative; width: 600px;}
+#page_content_h1    {margin: 0px auto; position: relative; width: 600px; font-size: 33px}

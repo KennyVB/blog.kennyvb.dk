@@ -43,11 +43,19 @@
 <div id="footer_line1"></div>
 <div id="footer-links">
 <p>Links</p>
-<ul>
-<li><a href="http://blog.artofanangel.dk" target="_blank">Blog.ArtOfAnAngel.dk</a></li>
+<ul class="links_left">
+<li><a href="http://www.blog.artofanangel.dk" target="_blank">Blog.ArtOfAnAngel.dk</a></li>
 <li><a href="http://www.totallywicked-eliquid.dk/" target="_blank">Totally Wicked</a></li>
 <li><a href="http://www.komogvind.dk/" target="_blank">Kom og Vind</a></li>
-<li><a href="http://css-tricks.com" target="_blank">Css-tricks.com</a></li>
+<li><a href="http://www.css-tricks.com" target="_blank">Css-tricks.com</a></li>
+<li><a href="http://www.macbay.dk" target="_blank">MacBay.dk</a></li>
+</ul>
+<ul class="links_right">
+<li><a href="http://www.blog.artofanangel.dk" target="_blank">Blog.ArtOfAnAngel.dk</a></li>
+<li><a href="http://www.totallywicked-eliquid.dk/" target="_blank">Totally Wicked</a></li>
+<li><a href="http://www.komogvind.dk/" target="_blank">Kom og Vind</a></li>
+<li><a href="http://www.css-tricks.com" target="_blank">Css-tricks.com</a></li>
+<li><a href="http://www.macbay.dk" target="_blank">MacBay.dk</a></li>
 </ul>
 </div>
 
@@ -55,6 +63,7 @@
 
     <div id="footer_line2"></div>
        <div id="twitter">
+       <h5>Sidste Tweets</h5>
            <div class="tweet"></div>
            </div>
           </div>
