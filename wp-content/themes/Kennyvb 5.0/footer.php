@@ -1,7 +1,6 @@
 </div>
 </div>
 <div class="push"></div>
-<footer>
 <div id="footer">
 <?php
 /**
@@ -49,6 +48,5 @@
 
 	wp_footer();
 ?>
-</footer>
 </body>
 </html>

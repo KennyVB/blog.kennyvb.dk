@@ -44,14 +44,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header>
-
+<div id="main-wrap">
+<div id="header">
+<img src="<?php bloginfo( 'template_url' ); ?>/images/kennyvb2.png" alt="Kennyvb" id="top_header">
 <a href="/"><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="Kennyvb" id="logo"></a>
 <div id="navi">
     <ul id="nav">
         <?php wp_list_pages('title_li=&depth=0&sort_column=menu_order'); ?>
         
 </ul>
+   </div>
 <div class="search-form">
         <?php $search_text = "S&oslash;g"; ?> 
 <form method="get" id="searchform"  
@@ -64,10 +66,9 @@ onfocus="if (this.value == '<?php echo $search_text; ?>')
 {this.value = '';}" /> 
 <input type="hidden" id="searchsubmit" /> 
 </form>
-        </div>
+     
 </div>
-</header>
-<div id="main-wrap">
+</div>
 <div id="twitter">
             <h4>Twitter</h4>
             <h5>Sidste 10 tweets</h5>

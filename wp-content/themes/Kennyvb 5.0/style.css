@@ -13,22 +13,23 @@ Tags: starkers, naked, clean, basic
 @import "css/layout.css";
 
 *					{ margin: 0; padding: 0; font-family: 'Balthazar', serif;}
-body 				{ color: #f3f3f3; font:14px ; background: #000000 url(./images/kennyvb2.png) no-repeat; top:10px;}
+body 				{ color: #f3f3f3; font:14px ; background: #000000 ; top:10px;}
 html, body 			{ height: 100%; margin: auto;}
 a					{ text-decoration: underline; color: white; font-size: 14px;font: 400;}
 a img				{ border: 0; }
 a:hover				{ color: #6dcff6; }
 h1 a:visited,h1 a:focus,h1 a:hover,h1 a:active,h2 a,h2 a:link,h3 a:visited,h2 a:focus,h2 a:hover,h2 a:active,h3 a,h3 a:link,h3 a:visited,h3 a:focus,h3 a:hover,h3 a:active,h4 a,h4 a:link,h4 a:visited,h4 a:focus,h4 a:hover,h4 a:active	{ text-decoration: none}
-#main-wrap			{ width: 1150px; margin: 0px 0px 0px 0px;  overflow:auto; padding-bottom: 150px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -150px 0; /* the bottom margin is the negative value of the footer's height */}
-.main-wrap          { width: 1150px; margin: 0px 0px 0px 0px;  overflow:auto; padding-bottom: 150px; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -150px 0; /* the bottom margin is the negative value of the footer's height */}
-#main-content		{ position: relative; z-index: 49; overflow: hidden; margin: 187px 0px 0px 0px; padding: 3px; width: 618px; min-height: 100%;}
-#logo-name			{ position: fixed; z-index: 50 ;}
-#twitter			{ float: right; width: 448px; height: 213px; margin: 855px 0 0 689px; position: absolute;}
+#main-wrap			{ width: 1167px; overflow:auto; padding-bottom: 150px; min-height: 100%; margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */}
+#header             { margin: 0px 0px 0px 0px; position: absolute;}
+#top_header         { margin: 0 auto; position: absolute; z-index: 50;}
+#main-content		{ position: relative; z-index: 49; overflow: hidden; margin: 315px 0px 0px 0px; padding: 3px; width: 618px; min-height: 100%;}
+#logo   			{ position: relative; z-index: 52 ;}
+#twitter			{ float: right; width: 448px; height: 213px; margin: 990px 0 0 689px; position: absolute;}
 #twitter h4			{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-transform: uppercase; font: 16px ;font-family: 'Balthazar', serif; letter-spacing: 2px; margin: -35px 0px 0px 179px; position: absolute; }
 #twitter h5			{ font: italic 16px ; color: #6dcff6; margin: 0 0 10px 0; }
-#footer				{ position: relative; height: 142px; /* .push must be the same height as .footer */; margin-top: -150px; /* negative value of footer height */ height: 150px; clear:both;}
+#footer				{ position: relative; /* .push must be the same height as .footer */; margin: -150px auto; /* negative value of footer height */ height: 150px; clear:both; width: 1150px;}
 #footer-links		{ font: italic }
-#nav				{ background-color:#55a0be; font: 13px Arial, sans-serif ;text-transform: uppercase ;margin: 135px 0px 0px -6px; width: 636px; position: absolute;}
+#nav				{ background-color:#55a0be; font: 13px Arial, sans-serif ;text-transform: uppercase ;margin: 135px 0px 0px -6px; width: 636px; position: absolute; z-index: 51;}
 #nav ul 			{ background-color:#55a0be; margin:0px 0px; padding:0px 0px; height:40px;}
 #nav li 			{ list-style:none; margin:0px 0px; padding:0px 0px; float:left; display:inline; position:relative;}
 #nav li a 			{ display:block; text-decoration:none; color: white; line-height:40px; padding:0px 15px;}
@@ -44,7 +45,7 @@ h2 a:hover			{ color: #6dcff6; }
 .entry-date a:hover { color: #6dcff6}
 p					{ color: white; font-size: 13px;font: 400;font-family: 'Open Sans', sans-serif; margin: 20px 0 20px 0;}
 .sharing div.facebook_button { font-size: 0; height: 18px; padding: 0; }
-#sidste_post 		{ float: right; width: 448px; height: 213px; margin: 195px 0 0 689px; position: absolute; }
+#sidste_post 		{ float: right; width: 448px; height: 213px; margin: 334px 0 0 689px; position: absolute; }
 #sidste_post h4		{ font: italic 16px ; color: #6dcff6; margin: 0 0 10px 0; }
 #search-form        { margin: 0px 0px 0px 0px;}
 .footer, .push      { clear: both; height: 142px; /* .push must be the same height as .footer */ }
